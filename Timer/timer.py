@@ -151,7 +151,7 @@ def notify(title, subtitle=None):
 
 def play_sound(filename):
     """Play the given sound file using the `afplay` command line utility."""
-    subprocess.Popen(['afplay', filename])
+    subprocess.Popen(["bash", "play_sound.sh"])
 
 
 if __name__ == '__main__':
