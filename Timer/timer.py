@@ -41,15 +41,15 @@ def main():
     title = 'Timer started' + (': %s' % label.capitalize() if label else '.')
 
     if minutes and seconds:
-        notify(title, "I'll notify you in %i:%.2i." % (minutes, seconds))
+        # notify(title, "I'll notify you in %i:%.2i." % (minutes, seconds))
         passed_time = '%i:%.2i have passed.' % (minutes, seconds)
     elif minutes:
-        notify(title, "I'll notify you in %i %s." % (minutes,
-               'minute' if minutes == 1 else 'minutes'))
+        # notify(title, "I'll notify you in %i %s." % (minutes,
+               # 'minute' if minutes == 1 else 'minutes'))
         passed_time = '%i %s passed.' % (minutes,
                       'minute has' if minutes == 1 else 'minutes have')
     else:
-        notify(title, "I'll notify you in %i seconds." % seconds)
+        # notify(title, "I'll notify you in %i seconds." % seconds)
         passed_time = '%i seconds have passed.' % seconds
 
     time.sleep(interval)
